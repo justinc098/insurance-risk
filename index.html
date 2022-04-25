@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Insurance Risk Calculator</title>
+    </head>
+
+    <body>
+        <h1>Is your client eligible for health insurance?</h1>
+        <p>Answer a few questions to determine the risk of signing someone up for health insurance.</p>
+
+        <label>What is the age of the individual?</label><br />
+        <select id="q1">
+            <option value="0">Younger than 30</option>
+            <option value="10">30-45</option>
+            <option value="20">46-60</option>
+            <option value="30">61+</option>
+        </select><br /><br />
+
+        <label>What is the indivduals height (in inches)?</label><br />
+            <form action="/action_page.php" id="ht">
+                <label for="height">Height:</label>
+                <input type="text" id="height" name="height">
+            </form><br /><br />
+
+        <label>What is the individuals weight (in lbs)?</label><br />
+            <form action="/action_page.php" id="wt">
+                <label for="weight">Weight:</label>
+                <input type="text" id="weight" name="weight">
+            </form><br /><br />
+
+
+        <label>What is the level of blood pressure in the individual?</label><br />
+        <select id="q4">
+            <option value="0">Normal</option>
+            <option value="15">Elevated</option>
+            <option value="30">Stage 1</option>
+            <option value="75">Stage 2</option>
+            <option value="100">Crisis</option>
+        </select><br /><br />
+
+        <label>Does the patient have history of diabetes, cancer, or alzheimers in the family?</label><br />
+        <select id="q5">
+            <option value="0">None</option>
+            <option value="10">1 of these</option>
+            <option value="20">2 of these</option>
+            <option value="30">All 3</option>
+        </select><br /><br />
+
+        <button onclick="nothing()">Submit</button>
+    </body>
+
+</html>
